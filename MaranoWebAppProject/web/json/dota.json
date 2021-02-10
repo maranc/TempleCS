@@ -1,0 +1,46 @@
+[
+    {
+        "dotaTeamId": "1",
+        "teamCompName": "best pushers",
+        "heroNames": "a1, a2, a3, a4, a5",
+        "teamGoals": "a1, a2, a3, a4, a5",
+        "teamItems": "Euls, blink dagger",
+        "webUserId": "2"
+    },
+    {
+        "dotaTeamId": "2",
+        "teamCompName": "best fighters",
+        "heroNames": "b1, b2, b3, b4, b5",
+        "teamGoals": "b1, b2, b3, b4, b5",
+        "teamItems": "BKB, deso",
+        "webUserId": "3"
+    },{
+        "dotaTeamId": "3",
+        "teamCompName": "best feeders",
+        "heroNames": "c1, c2, c3, c4, c5",
+        "teamGoals": "c1, c2, c3, c4, c5",
+        "teamItems": "blink dagger, wind lace",
+        "webUserId": "2"
+    },{
+        "dotaTeamId": "4",
+        "teamCompName": "worst pushers",
+        "heroNames": "d1, d2, d3, d4, d5",
+        "teamGoals": "d1, d2, d3, d4, d5",
+        "teamItems": "dont get anything",
+        "webUserId": "2"
+    },{
+        "dotaTeamId": "5",
+        "teamCompName": "worst fighters",
+        "heroNames": "e1, e2, e3, e4, e5",
+        "teamGoals": "e1, e2, e3, e4, e5",
+        "teamItems": "pipe of insight, greaves",
+        "webUserId": "4"
+    },{
+        "dotaTeamId": "6",
+        "teamCompName": "worst team",
+        "heroNames": "none",
+        "teamGoals": "none",
+        "teamItems": "none",
+        "webUserId": "1"
+    }
+]

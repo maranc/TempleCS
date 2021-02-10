@@ -1,0 +1,11 @@
+SMAP
+getProfileAPI_jsp.java
+JSP
+*S JSP
+*F
++ 0 getProfileAPI.jsp
+webAPIs/getProfileAPI.jsp
+*L
+1,25:49
+25,2:74
+*E

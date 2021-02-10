@@ -1,0 +1,38 @@
+.slideShowContainer {
+    display:flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slideShow {
+    box-sizing: border-box; 
+    width: 50%;
+}
+
+.slideShow{
+    text-align:center;
+    font-weight:bold; 
+}
+
+.slideShow img { /* style images that are inside of class slideShow */
+    float: none;
+    width: 80%;
+    border-radius:8px;
+}
+
+.slideShow button {
+    width: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.slideShow .captionClass {
+    padding-bottom: lex;
+    background-color:white;
+    color:black;
+}
+
+.slideShow.small {
+    width: 40%;
+}
+

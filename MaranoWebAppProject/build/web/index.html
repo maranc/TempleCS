@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--
+Final Project
+By: Cole Marano
+-->
+<!-- -->
+<html>
+    <head>
+
+        <!-- title the website's name -->
+        <title> Dota Team Central </title>
+        <link rel="stylesheet" href="styles/style.css" type="text/css" />
+        <link rel="stylesheet" href="styles/dropdown.css" type="text/css" />
+        <link rel="stylesheet" href="styles/slideshow.css" type="text/css" />
+        <link rel="stylesheet" href="styles/clickSort.css"  type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <!--start titleNav Div -->
+        <div id="titleNav"> 
+            <!--start title -->
+            <div id="title">
+                Dota Team Central
+            </div><!-- end of title -->
+
+            <!-- start of nav for dropdown-->
+            <div id="nav">
+                <div class="dropdown">
+                    <a href="#/home">Home</a>
+                </div>
+
+                <div class="dropdown">
+                    <div class="dropHeader">Account</div>
+                    <div class="dropContent">
+                        <a href="#/logon">Log In</a> <br/>
+                        <a href="#/logoff">Log Off</a> <br/>
+                        <a href="#/getProfile">Profile</a> <br/>
+                        <a href="#/userInsert">Register</a> <br/>
+                    </div> 
+                </div>
+
+                <div class="dropdown">
+                    <div class="dropHeader" title="Search">Search</div>
+                    <div class="dropContent">
+                        <a href="#/users">Users</a> <br/>
+                        <a href="#/dotaTeams">Dota Teams</a> <br/>
+                        <a href="#/liveUsers">Live Users</a> <br/>
+                        <a href="#/liveDotaTeams">Live Dota Teams</a> <br/>
+                        <a href="#/slides">SlideShow</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <div class="dropHeader" title="Tutorial">Tutorial</div>
+                    <div class="dropContent">
+                        <a>Proposal</a> <br/>
+                        <a>Proof Of Concept</a> <br/>
+                        <a>Tutorial Home</a> <br/>
+                        <a>Demo</a> <br/>
+                    </div> 
+                </div>
+
+                <div class="dropdown">
+                    <a href="#/blog">Blog</a> 
+                </div>
+
+            </div> <!-- end of nav -->       
+
+        </div> <!-- end of titleNav -->
+
+        <!-- start of header -->  
+        <div id= "header"> 
+            <h2 class='font'>
+                Everything you need to build the perfect Dota team compositions
+            </h2>
+        </div> <!--  end of header-->
+
+        <div id="content"></div>
+
+        <script src="js/components/blog.js"></script>
+        <script src="js/components/home.js"></script>
+        <script src="js/reusable/dropdownFw.js"></script>
+        <script src="js/reusable/routeParam.js"></script>
+        <script src="js/reusable/MakeClickSort.js"></script>
+        <script src="js/components/slideShow.js"></script>
+        <script src="js/components/users.js"></script>
+        <script src="js/components/dotaTeams.js"></script>
+        <script src="js/components/liveUsers.js"></script>
+        <script src="js/components/liveDotaTeams.js"></script>
+        <script src="js/reusable/ajax.js"></script>
+        <script src="js/components/webUserMods.js"></script>
+        <script src="js/reusable/MakeSlideShow.js"></script>
+        <script src="js/reusable/Utils.js"></script>
+        <script src="js/components/dotaMods.js"></script>
+        <script src="js/components/account.js"></script>
+        <script src="js/CRUD_icons.js"></script>
+        
+        <script>
+            "use strict";
+            
+            dropdownFw({
+                headerId: "dropHeader",
+                contentId: "dropContent",
+                showId:"show",
+                hideId:"hide"
+            });
+
+            var routes = [];
+            routes['#/blog'] = blog;
+            routes['#/home'] = home;
+            routes['#/users'] = users;
+            routes['#/dotaTeams'] = dotaTeams;
+            routes['#/slides'] = slideShow;
+            routes['#/liveUsers'] = liveUsers;
+            routes['#/liveDotaTeams'] = liveDotaTeams;
+            routes['#/userUpdate'] = webUserMods.update;
+            routes['#/teamsUpdate'] = dotaMods.update;
+            routes['#/logon'] = account.logon;
+            routes['#/logoff'] = account.logoff;
+            routes['#/getProfile'] = account.getProfile;
+            routes['#/userInsert'] = webUserMods.insert;
+            routes['#/dotaInsert'] = dotaMods.insert;
+            
+            var finalRoute = routeParam({
+                routeArray: routes,
+                startLink: "#/home",
+                contentId: "content"
+            });
+            finalRoute.printRoutes();
+        </script>
+
+        <div id="footer">
+            Cole Marano
+        </div>  
+
+
+    </body>
+</html>

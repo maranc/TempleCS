@@ -1,0 +1,20 @@
+[
+    {
+        "nickname": "Princess",
+        "pic": "http://cis-linux2.temple.edu/~sallyk/pics_cat/pic1.png",
+        "birthYear": "2019",
+        "sex": "female"
+    },
+    {
+        "nickname": "Tipsy",
+        "pic": "http://cis-linux2.temple.edu/~sallyk/pics_cat/pic2.png",
+        "birthYear": "2018",
+        "sex": "male"
+    },
+    {
+        "nickname": "Dynamic Trio",
+        "pic": "http://cis-linux2.temple.edu/~sallyk/pics_cat/pic3.png",
+        "birthYear": "2020",
+        "sex": "mixed"
+    }
+]

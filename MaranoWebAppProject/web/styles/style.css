@@ -1,0 +1,134 @@
+/*
+By: Cole Marano
+External Style Sheet
+*/
+
+html, body{
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    background-color: #9e6c75;
+    font-size: 10px; 
+}
+
+.font{
+    font-family: 'Oswald';
+    font-family: 'Times New Roman';
+}
+
+#titleNav{
+    position:fixed;
+    top:0px; 
+    left:0px;
+    z-index: 1; 
+    width: 100%; 
+    background-image: url("../dota_heroes.png");
+    background-color: #524B45;
+    padding-bottom: 22px; 
+    color: Black;
+    text-align: center;
+}
+
+#title{
+    padding: 11px;
+    padding-bottom: 0px; 
+    font-size: 32px;
+    letter-spacing: 1.25px; 
+    font-family: 'Times New Roman';
+}
+
+#nav{
+    position: fixed;
+    top: 0px; 
+    right: 20px;
+    text-align: right; 
+    font-size: 25px; 
+    padding-bottom:10px; 
+    padding-top: 30px;
+    white-space: nowrap;
+}
+
+#nav a{
+    text-decoration:none; 
+    letter-spacing: 1.5px;
+    color: black;
+}
+
+#nav a:hover {
+    color: #a85c32;
+}
+
+#header {
+
+    padding: 10px; 
+    padding-top: 80px;
+    padding-bottom: 10px; 
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Times New Roman';
+
+}
+
+img{
+    float: left;
+    padding-right: 0px;
+    padding-left:0px;
+}
+#content {
+    padding: 10px; 
+    padding-top: 0px;
+    padding-bottom: 15px; 
+    padding-right: 62px;
+    padding-left: 30px;
+    font-size: 15px;
+    font-family: 'Times New Roman';
+}
+
+#footer{
+    position: fixed; 
+    bottom: 0px;
+    left: 0px; 
+    z-index: 1;
+
+    background-image: url("../dota_heroes.png");
+    color: Black; 
+    width: 100%;
+
+    text-align: center;
+    padding: 10px;
+    font-size: 15px; 
+    letter-spacing: 1.5px;
+}
+
+/*for mobile*/
+.row {  
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem 0.5rem;  
+    margin-bottom: 1rem;  
+}
+.column {
+    padding: 0.5rem 0.5rem; 
+    width: 100%;
+}
+.column img { 
+    width:100%;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 5px grey;
+}
+
+/*for use on computer*/
+@media only screen and (min-width: 600px) { 
+    .row { 
+        flex-direction: row;
+    }
+    .column66 {
+        width: 33%;
+    }
+    .column66 {
+        width: 66%;
+    }
+}
